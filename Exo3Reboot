@@ -1,0 +1,9 @@
+array = [1, 2, 4, 6 , 8, 10, 12, 14, 16]
+
+odd_array = []
+even_array = []
+
+#TODO: write some code with... #each ! :)
+
+print odd_array
+

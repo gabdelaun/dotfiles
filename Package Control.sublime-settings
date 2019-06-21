@@ -1,16 +1,28 @@
 {
-  "installed_packages":
-  [
-    "AdvancedNewFile",
-    "All Autocomplete",
-    "ApplySyntax",
-    "BracketHighlighter",
-    "Emmet",
-    "Git",
-    "GitGutter",
-    "JSX",
-    "Package Control",
-    "SCSS",
-    "ERB Snippets"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"ApplySyntax",
+		"Bootstrap 3 Autocomplete",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Color Scheme - Frontend Delight",
+		"ColorPicker",
+		"Emmet",
+		"Emmet Css Snippets",
+		"ERB Snippets",
+		"Git",
+		"GitGutter",
+		"JSX",
+		"Package Control",
+		"SCSS",
+		"SCSS Compiler",
+		"Search Stack Overflow",
+		"SublimeLinter-contrib-sublime-syntax"
+	]
 }

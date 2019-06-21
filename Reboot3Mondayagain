@@ -1,0 +1,113 @@
+#todo
+# : implement a shopping cart, where ultimately you can
+# Add items with prices and amount in your cart.
+# Then checkout and the terminal will print you the detailed receipt.
+# Start with a very simple program without handling prices nor available stock, then improve it.
+#
+
+# list.each do |product|
+#   list_item << list.item
+# end
+
+# puts "#{item}"
+
+# list = []
+# product = ''
+
+# until product == 'finish'
+#   puts "What is the name of the product you want to add?"
+#   product = gets.chomp
+#   list << product unless product == 'finish'
+#   p list
+# end
+
+products = []
+action = ''
+cart = []
+
+# until action == 'finish'
+#   puts "What to do? (list, add, remove)"
+#   action = gets.chomp
+#   if action == 'add'
+#     puts "What product do you want to add"
+#     product = gets.chomp
+#     products << product
+#   elsif action == 'list'
+#     products.each_with_index do |product, index|
+#     puts "#{index + 1} is #{product}"
+#     end
+#   elsif action == 'remove'
+#     puts "What position of the product you want to remove"
+#     position = gets.chomp.to_i
+#     products.delete_at(position - 1)
+#   end
+# end
+
+products = [{
+  name: "apple",
+  price: 2
+},
+
+{
+  name: "tomato",
+  price: 4
+},
+{
+  name: "flour",
+  price: 2
+},
+{
+  name: "watermelon",
+  price: 10
+}]
+
+until action == 'finish'
+ puts "What to do? (list, add, remove, add_to_cart, total_price)"
+  action = gets.chomp
+
+
+case action
+ when 'add'
+    puts "What product do you want to add"
+    product_name = gets.chomp
+    puts "What is the price of the product"
+    product_price = gets.chomp
+    products << { name: product_name, price: product_price.to_i }
+ when 'list'
+    products.each_with_index do |product, index|
+    puts "#{index + 1} - an #{product[:name]} is #{product[:price]} EUR"
+    end
+ when 'add_to_cart'
+  puts "what is the position of the product you want to add into the cart?"
+  position_cart = position.gets.chomp.to_i
+  cart << product[position_cart - 1]
+ when 'list_cart'
+  cart.each_with_index do |product, index|
+    puts "#{index + 1} - #{product[:name]} #{product[:price]} EUR"
+    end
+ when 'remove'
+    puts "What position of the product you want to remove"
+    position = gets.chomp.to_i
+    products.delete_at(position - 1)
+ when 'total_price'
+  total = 0
+  cart.each do |product|
+  total += product[:price]
+  end
+   puts "The total price is: #{total}"
+ end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
